@@ -42,19 +42,12 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ inputs.make_release }}
     env:
-      REPO_OWNER: vconet
+      REPO_OWNER: V-Conet
       REPO_NAME: OnePlus_KernelSU_SUSFS
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       RELEASE_NAME: "TEST BUILD"
       RELEASE_NOTES: |
-        This release contains KernelSU Next and SUSFS v1.5.5
-
-        Module: 
-        -> https://github.com/sidex15/ksu_module_susfs
-
-        Non-Official Managers:
-        -> https://github.com/KernelSU-Next/KernelSU-Next
-
+        Test builds, ksun with susfs
 
     steps:
       - name: Checkout code
